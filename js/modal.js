@@ -1,4 +1,6 @@
 window.addEventListener('DOMContentLoaded', ()=> {
+    if(window.location.pathname == '/sobre-nos/') {
+
     const funcionarios = document.querySelectorAll('.funcionarios');
     const btnFecharModal = document.getElementById('btnFecharModal')
 
@@ -6,6 +8,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
         funcionario.addEventListener('click', toggleModal);
     })
     btnFecharModal.onclick = toggleModal;
+}
 })
 
 function toggleModal(e) {

@@ -27,22 +27,22 @@
 <!-- MISSAO -->
 
 <div class="container">
-  <div class="row missao">
-    <div class="col-md-4">
+  <div class="missao">
+    <div class="missao_item">
       <img src="<?= get_template_directory_uri() ?>/images/foto03.svg">
       <h4>Missão</h4>
       <p>Contribuir para a eficiência digital e upgrade tecnológico das organizações, maximizando o poder de resposta
         num mercado concorrencial. Desenvolver produtos e serviços moldáveis a um mundo em permanente inovação.</p>
     </div>
 
-    <div class="col-md-4">
+    <div class="missao_item">
       <img src="<?= get_template_directory_uri() ?>/images/foto03.svg">
       <h4>Visão</h4>
       <p>O mundo é o nosso espaço, faremos dos nossos saberes nossas forças, saberemos distinguir a ficção da realidade.
       </p>
     </div>
 
-    <div class="col-md-4">
+    <div class="missao_item">
       <img src="<?= get_template_directory_uri() ?>/images/foto03.svg">
       <h4>Valores</h4>
       <p>O cliente tem liberdade de escolher a solução mais adequada às suas necessidades. Todas as soluções têm
@@ -60,7 +60,7 @@
 <!-- EQUIPE -->
 
 <!-- Perfil na página  -->
-<div class="container">
+<div class="container mt-5">
   <div class="row equipe">
     <?php
     $cards = mycmb2_get_field('profile_cards');
@@ -68,7 +68,7 @@
       $i = 0;
       while ($i < count($cards) && $i < 8) {
         ?>
-        <div class="col-md-3 funcionarios" id="<?= $cards[$i]['card_nome'] ?>">
+        <div class=" funcionarios" id="<?= $cards[$i]['card_nome'] ?>">
           <div class="hexMask"><img src="<?= $cards[$i]['card_foto'] ?>" alt="card foto" class="profile-pic hexMask"></div>
           <h5>
             <?= $cards[$i]['card_nome'] ?>

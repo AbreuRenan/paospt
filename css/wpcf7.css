@@ -7,12 +7,19 @@
 .wpcf7 br {
     display: none;
 }
-
-.wpcf7 {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 0 15px;
+.wpcf7 label {
+    font-size: 15px;
 }
+p.quote {
+    font-size: 12px;
+    margin: 10px 0;
+}
+.wpc7form-container{
+    border-top: 2px solid #447daf;
+    padding-top: 40px;
+    margin-top: 20px;
+}
+
 .wpcf7-grid {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -36,4 +43,33 @@
     height: 32px;
     margin: 0 10px 0 0;
     align-self: center;
+}
+.wpcf7 input[type="url"], 
+.wpcf7 input[type="email"], 
+.wpcf7 input[type="tel"],
+.wpcf7 input[type="text"],
+.wpcf7 select  {
+    border: 1px solid #4E93CF;
+    background-color: transparent;
+    height: 50px;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+
+.wpcf7 .wpcf7-fileLabel {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    max-width: fit-content;
+    color: #1C232E;
+    background-color: #4E93CF;
+    padding: 20px 37px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.5s;
+    text-align: center;
+}
+.wpcf7-file {
+    display: none;
 }
