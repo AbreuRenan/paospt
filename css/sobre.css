@@ -1,0 +1,25 @@
+.equipe {margin-bottom: 100px;}
+.equipe h5 {text-align: center;}
+.equipe p {text-align: center;}
+
+.funcionarios {margin-bottom: 50px;}
+.funcionarios>img, .funcionarios>img:hover {
+    height: 290px;
+    max-width: 250px;
+    object-fit: contain;
+    transition: ease-in-out .1s;
+    background-repeat: no-repeat;
+}
+.funcionarios img:hover {
+    filter: brightness(2) saturate(3) hue-rotate(343deg) ;
+}
+
+#fulano {margin: auto; display: block;}
+
+#fulano {width: 259px; height: 301px; background: url("../images/equipe01.svg") no-repeat;}
+#fulano:hover {width: 259px; height: 301px; background: url("../images/equipe01-over.svg") no-repeat;}
+
+.contato {padding: 80px 0 110px 0; background-color: #222A36; background: url("../images/padrao.jpg") repeat center;}
+.footer {padding: 60px 0 20px 0;}
+.box-cinza {background-color: #222A36; border-radius: 15px; margin-bottom: 80px; padding: 30px; height: 405px;}
+.box-cinza p {margin-bottom: 0px !important;}

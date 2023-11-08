@@ -1,0 +1,117 @@
+.modal_container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+.modal_container.is_open {
+    display: flex;
+}
+.is_open .modal_content {
+    animation: openModal .25s forwards ease-in-out;
+}
+.modal_content {
+    background: url('../images/hex.svg') no-repeat center center;
+    background-size: 85%;
+    width: 700px;
+    height: 700px;
+    padding: 40px 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+/* Hex SVG code */
+
+.hexMask2 {
+    -webkit-mask-image: url('../images/hexMask.svg') ;
+    -moz-mask-image: url('../images/hexMask.svg') ;
+    background-size: contain;
+    margin: 0 auto;
+    display: block;
+    background-color: red;
+  }
+
+  .hexMask {
+    display: flex;
+    width: 290px;
+    height: 290px;
+    -webkit-mask-image: url(../images/hexMask.svg);
+    -moz-mask-image: url(../images/hexMask.svg);
+    justify-content: center;
+    align-items: center;
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+  }
+.modal_foto {
+    width: 180px;
+    height: auto;
+    max-width: 180px;
+    max-height: 180px;
+    margin-bottom: 20px;
+}
+.hexMask>img {
+    max-width: 290px;
+    object-fit: contain;
+}
+
+.hexMask .modal_foto {
+    width: 180px;
+    height: 180px;
+}
+
+.modal_content .hexMask {
+    width: 180px;
+    height: 180px;
+    -webkit-mask-size: 90%;
+    mask-size: 90%;
+}
+.modal_name {
+    color: #4e93cf;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0 ;
+}
+.modal_cargo {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.modal_sobre {
+    max-width: 85%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.fechar {
+    position: absolute;
+    top: calc(50% - 200px);
+    right: calc(50% - 320px);
+    z-index: 99999;
+}
+.fechar:hover {
+    box-shadow: 0 0 8px 2px white;
+}
+
+@keyframes openModal {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
