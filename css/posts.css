@@ -1,0 +1,7 @@
+.post .post-date {
+    font-size: 12px;
+}
+.post .post-content+.button {
+    max-width: 30%;
+    text-align: center;
+}
