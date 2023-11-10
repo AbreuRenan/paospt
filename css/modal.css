@@ -13,6 +13,9 @@
 }
 .modal_container.is_open {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
 .is_open .modal_content {
     animation: openModal .25s forwards ease-in-out;
@@ -44,8 +47,8 @@
     display: flex;
     width: 290px;
     height: 290px;
-    -webkit-mask-image: url(../images/hexMask.svg);
-    -moz-mask-image: url(../images/hexMask.svg);
+    -webkit-mask-image: url("../images/hexMask.svg");
+    -moz-mask-image: url("../images/hexMask.svg");
     justify-content: center;
     align-items: center;
     -webkit-mask-size: 100%;
@@ -102,6 +105,10 @@
     top: calc(50% - 200px);
     right: calc(50% - 320px);
     z-index: 99999;
+    width: 40px;
+    height: 40px;
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 .fechar:hover {
     box-shadow: 0 0 8px 2px white;

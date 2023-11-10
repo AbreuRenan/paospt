@@ -1,0 +1,18 @@
+#page-atuacao .grid-area-atuacao .box-cinza{
+    background-color: transparent;
+    margin-bottom: 0;
+}
+#page-atuacao .grid-area-atuacao {
+    grid-template-columns: repeat(2,1fr);
+    margin: 0 80px;
+}
+#page-atuacao .grid-area-atuacao>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-atuacao .grid-area-atuacao .img-area-atuacao{
+    max-width: 350px;
+}
