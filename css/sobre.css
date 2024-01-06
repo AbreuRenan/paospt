@@ -1,0 +1,67 @@
+.equipe {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100% / 1, max(250px, 100% / 4)), 1fr));
+    margin-bottom: 100px;
+}
+.equipe h5 {text-align: center;}
+.equipe p {text-align: center;}
+
+.funcionarios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    
+    margin-bottom: 50px;}
+.funcionarios>img, .funcionarios>img:hover {
+    height: 290px;
+    max-width: 250px;
+    object-fit: contain;
+    transition: ease-in-out .1s;
+    background-repeat: no-repeat;
+
+}
+.funcionarios img:hover {
+    filter: brightness(2) saturate(3) hue-rotate(343deg) ;
+}
+
+#fulano {margin: auto; display: block;}
+
+#fulano {width: 259px; height: 301px; background: url("../images/equipe01.svg") no-repeat;}
+#fulano:hover {width: 259px; height: 301px; background: url("../images/equipe01-over.svg") no-repeat;}
+
+.contato {padding: 80px 0 110px 0; background-color: #222A36; background: url("../images/padrao.jpg") repeat center;}
+
+.box-cinza p {margin-bottom: 0px !important;}
+
+.missao {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+}
+.missao_item {
+    max-width: 25%;
+    min-width: 280px;
+}
+.missao img {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 767px) {
+    .missao_item {
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .missao img {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    
+}

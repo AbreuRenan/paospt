@@ -1,0 +1,72 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    color: #D2D3D4;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+h1,h2,h3,h4,p {
+    font-family: 'Roboto', sans-serif ;
+    font-weight: 300
+}
+
+.body { background: url(../images/bg.jpg) no-repeat; background-color: #1C232E ; }
+.body img { width: 100%;}
+
+.logo {width: 199px; height: 67px; background: url(../images/logo_paos.svg) no-repeat;}
+h2 {font-size: 7.3rem ; line-height: 85px ; color: #4E93CF ; margin-bottom: 30px ;}
+h3 {font-size: 6rem ; color: #D2D3D4 ; margin: 0px 0 65px 0 ;}
+h4 {font-size: 3.2rem ; color: #4E93CF ; margin: 10px 0 15px 0 ;}
+h5 {font-family: 'Roboto', sans-serif ; font-weight: 300 ; font-size: 25px ; color: #4E93CF ; margin: 10px 0 0px 0 ;}
+p {font-size: 1.8rem ; color: #D2D3D4 ;}
+p.titulo {border-left: 3px solid #4E93CF; padding-left: 30px; margin-bottom: 80px;}
+p.tag {font-weight: 500; margin-bottom: 0px; margin-top: 50px;}
+p.tag-azul {font-weight: 500; margin-bottom: 0px; color: #4E93CF ;}
+
+nav {display: flex ; align-items: center ; justify-content: space-between ; height: 127px; border-bottom: 1px solid #0C3650;}
+nav ul {list-style: none; margin-bottom: 0px ;}
+nav ul li {display: inline-block;}
+nav ul li a {padding-left: 20px; color: #D2D3D4; text-decoration: none ; font-size: 1.8rem;}
+nav ul li a:hover {color: #4E93CF;}
+nav ul li.current-menu-item a {color: #4E93CF;}
+
+.button {display: flex; text-align: center;font-family: 'Roboto', sans-serif ; font-size: 18px; font-weight: 700; min-width: fit-content;max-width: fit-content; color: #1C232E; background-color: #4E93CF; padding: 15px 37px; border-radius: 50px; text-decoration: none ; transition: 0.5s;}
+.button:hover {color: #fff; background-color: #02619D; text-decoration: none;}
+.somos-a-paos {padding: 60px 0;}
+.areas-tecnologicas {padding: 60px 0;}
+.areas-atuacao {padding: 40px 0 150px 0;}
+.grid-area-atuacao {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+.contato {padding: 80px 0 110px 0; background-color: #222A36; background: url(../images/padrao.jpg) repeat center;}
+.box-cinza {background-color: #222A36; border-radius: 15px; margin-bottom: 80px; padding: 30px; height: 405px;}
+.box-cinza p {margin-bottom: 0px ;}
+.menu a{
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1199px) {
+    .grid-area-atuacao {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .box-cinza {
+        margin-bottom: 0!important;
+    }
+    nav ul li a {
+        font-size: 1.45rem;
+    }
+    
+}
+@media screen and (max-width: 576px) {
+    .grid-area-atuacao {
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+    h2 {font-size: 4.2rem; line-height: 1.2;}
+    h3 {font-size: 3.4rem; line-height: 1.2;}
+    h4 {font-size: 1.8rem; line-height: 1.2;}
+    h5 {font-size: 1.6rem; line-height: 1.2;}
+    .logo {width: 67px; height: 67px; background: url('../images/cubo.png') no-repeat center; background-size: contain;}
+}

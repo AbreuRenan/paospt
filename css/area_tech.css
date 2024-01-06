@@ -1,0 +1,43 @@
+.grid-area-tecnologica {
+    display: grid;
+    grid-template-columns:  repeat(auto-fill, minmax(min(100% / 1, max(200px, 95% / 3)), 1fr));
+    gap: 2rem;
+    margin-bottom: 80px;
+}
+
+.grid-item-area-tech {
+    background-color: #222A36; 
+    border-radius: 15px; 
+    padding: 30px; 
+    height: 405px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.grid-item-area-tech ul {
+    margin-top: 2rem;
+}
+.grid-item-area-tech ul li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+
+@media screen and (max-width: 767px) {
+    .grid-area-tecnologica {
+        display: grid;
+        grid-template-columns:  repeat(2, minmax(40%, 1fr));
+    }
+    .grid-item-area-tech>h5 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .grid-area-tecnologica {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
