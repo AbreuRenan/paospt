@@ -30,7 +30,7 @@ nav ul li a {padding-left: 20px; color: #D2D3D4; text-decoration: none ; font-si
 nav ul li a:hover {color: #4E93CF;}
 nav ul li.current-menu-item a {color: #4E93CF;}
 
-.button {display: flex; text-align: center;font-family: 'Roboto', sans-serif ; font-size: 18px; font-weight: 700; min-width: fit-content;max-width: fit-content; color: #1C232E; background-color: #4E93CF; padding: 20px 37px; border-radius: 50px; text-decoration: none ; transition: 0.5s;}
+.button {display: flex; text-align: center;font-family: 'Roboto', sans-serif ; font-size: 18px; font-weight: 700; min-width: fit-content;max-width: fit-content; color: #1C232E; background-color: #4E93CF; padding: 15px 37px; border-radius: 50px; text-decoration: none ; transition: 0.5s;}
 .button:hover {color: #fff; background-color: #02619D; text-decoration: none;}
 .somos-a-paos {padding: 60px 0;}
 .areas-tecnologicas {padding: 60px 0;}
@@ -39,7 +39,6 @@ nav ul li.current-menu-item a {color: #4E93CF;}
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 30px;
-    margin-bottom: 80px;
 }
 .contato {padding: 80px 0 110px 0; background-color: #222A36; background: url(../images/padrao.jpg) repeat center;}
 .box-cinza {background-color: #222A36; border-radius: 15px; margin-bottom: 80px; padding: 30px; height: 405px;}
@@ -65,9 +64,9 @@ nav ul li.current-menu-item a {color: #4E93CF;}
         grid-template-columns: 1fr;
         padding: 40px;
     }
-    h2 {font-size: 4.2rem}
-    h3 {font-size: 3.4rem}
-    h4 {font-size: 1.8rem}
-    h5 {font-size: 1.4rem}
+    h2 {font-size: 4.2rem; line-height: 1.2;}
+    h3 {font-size: 3.4rem; line-height: 1.2;}
+    h4 {font-size: 1.8rem; line-height: 1.2;}
+    h5 {font-size: 1.6rem; line-height: 1.2;}
     .logo {width: 67px; height: 67px; background: url('../images/cubo.png') no-repeat center; background-size: contain;}
 }

@@ -2,6 +2,10 @@
     font-size: 12px;
 }
 .post .post-content+.button {
-    max-width: 30%;
+    max-width: fit-content;
     text-align: center;
+}
+
+.post {
+    margin-bottom: 15px;
 }

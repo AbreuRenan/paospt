@@ -1,6 +1,6 @@
 <!-- CONTATO -->
 
-<div class="container-fluid">
+<div class="container-fluid my-5">
     <div class="row contato">
         <div class="col-lg-12">
             <div>

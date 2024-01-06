@@ -9,6 +9,7 @@
     display: none;
     align-items: center;
     justify-content: center;
+    padding-top: 100px;
 
 }
 .modal_container.is_open {
@@ -57,6 +58,7 @@
     mask-repeat: no-repeat;
     -webkit-mask-position: center;
     mask-position: center;
+    cursor: pointer;
   }
 .modal_foto {
     width: 180px;

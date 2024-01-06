@@ -2,7 +2,7 @@
 <div class="container" id="page-atuacao">
   <div class="row">
     <div class="col">
-      <span>Áreas de atuação</span>
+      <p class="tag">Áreas de atuação</p>
       <h2>Conheça nossas especialidades</h2>
       <p class="titulo">
         Lorem Ipsum is simply dummy text of the printing and typesetting

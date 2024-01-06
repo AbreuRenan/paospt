@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <span>Contato</span>
+      <p class="tag">Contato</p>
       <h2>Entre em contato connosco</h2>
       <p class="titulo">
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -15,5 +15,7 @@
   * campo de preenchimento obrigatório
   <?php the_content() ?>
 </div>
+
+<?php include("contact_section.php"); ?>
 
 <?php get_footer(); ?>

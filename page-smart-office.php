@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <span>Smart Office</span>
+      <p class="tag">Smart Office</p>
       <h2>Dinamismo é o que nos move</h2>
       <p class="titulo">
         Lorem Ipsum is simply dummy text of the printing and typesetting

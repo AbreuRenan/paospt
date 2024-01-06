@@ -1,11 +1,11 @@
 <footer>
     <div class="container">
         <div class="row footer">
-            <div class="col-lg-12 d-flex flex-column my-5">
+            <div class="col-lg-12">
                 <center><img class="footer-logo" src="<?= get_stylesheet_directory_uri() ?>/images/logo_paos_peq.svg">
                 </center>
                 <nav class="footer">
-                    <ul class="footer-menu">
+                    <ul class="footer-list">
                         <li><i class="fa-regular fa-envelope" style="color: #4E93CF; font-size: 22px;"></i><a
                                 href="mailto:geral@paos.pt">geral@paos.pt</a></li>
                         <li><i class="fa-regular fa-circle-phone" style="color: #4E93CF; font-size: 22px;"></i><a
@@ -22,16 +22,12 @@
                         República 27 – 7º andar - 1050-186 Lisboa - Portugal</p>
                 </center>
 
-                <nav class="footer my-5">
+                <nav class="footer">
                     <ul>
-                        <li id="assoft">Membros associados</li>
-                        <li>
-                            <a href="https://www.assoft.org/pt/">
-                                <img src="<?= get_stylesheet_directory_uri() ?>/images/logo_assoft.svg">
-                            </a>
-                        </li>
-                        <li><a href="politica.html">Política de Privacidade</a></li>
-                        <li><a href="termos.html">Termos e Condições</a></li>
+                        <li id="assoft">Membros associados <a href="https://www.assoft.org/pt/"><img
+                                    src="<?= get_stylesheet_directory_uri() ?>/images/logo_assoft.svg"></a></li>
+                        <li><a href="/politica/">Política de Privacidade</a></li>
+                        <li><a href="/termos/">Termos e Condições</a></li>
                     </ul>
                 </nav>
             </div>
