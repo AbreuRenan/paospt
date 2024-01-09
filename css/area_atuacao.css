@@ -4,7 +4,6 @@
 }
 #page-atuacao .grid-area-atuacao {
     grid-template-columns: repeat(2,1fr);
-    margin: 80px 0;
 }
 #page-atuacao .grid-area-atuacao>div{
     display: flex;
@@ -20,7 +19,16 @@
 #page-atuacao .box-cinza{
     height: fit-content;
 }
-@media screen and (max-width: 576px) {
+.grid-area-atuacao .grid-area-atuacao-item {
+    min-height: fit-content;
+}
+#page-atuacao .grid-area-atuacao :nth-child(5) {
+    grid-column: 1/3;
+    width: 50%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 766px) {
+
     #page-atuacao .grid-area-atuacao {
         display: flex;
         flex-direction: column;
@@ -30,4 +38,15 @@
     #page-atuacao .grid-area-atuacao .box-cinza {
         height: fit-content;
     }
+    .grid-area-atuacao :nth-child(5) {
+        grid-column: initial;
+        width: initial;
+        margin: initial;
+    }
+    #page-atuacao .grid-area-atuacao :nth-child(5) {
+        grid-column: initial;
+        width: initial;
+        margin: initial;
+    }
+
 }

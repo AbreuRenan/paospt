@@ -15,6 +15,7 @@ function load_custom_Styles()
     wp_enqueue_style('area_atuacao', get_template_directory_uri() . '/css/area_atuacao.css');
     wp_enqueue_style('area_tech', get_template_directory_uri() . '/css/area_tech.css');
     wp_enqueue_style('menumobile', get_template_directory_uri() . '/css/menumobile.css');
+    wp_enqueue_style('contato_banner', get_template_directory_uri() . '/css/contato_banner.css');
 }
 function load_custom_Sripts()
 {

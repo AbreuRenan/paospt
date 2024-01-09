@@ -1,6 +1,4 @@
-.wpcf7 {
-    margin-bottom: 80px;
-}
+
 .wpcf7 * {
     margin: 0;
     padding: 0;
@@ -110,7 +108,8 @@ p.quote {
     text-align: center;
     cursor: pointer;
 }
-.wpcf7 .wpcf7-fileLabel:hover{
+
+.wpcf7 .wpcf7-fileLabel:hover, .wpcf7-form-control.wpcf7-submit:not([disabled]):hover{
     background-color: #02619D;
     color: white;
 }

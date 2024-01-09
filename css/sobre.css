@@ -1,7 +1,7 @@
 .equipe {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100% / 1, max(250px, 100% / 4)), 1fr));
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 .equipe h5 {text-align: center;}
 .equipe p {text-align: center;}
@@ -12,8 +12,8 @@
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    
-    margin-bottom: 50px;}
+    margin-top: 50px;
+}
 .funcionarios>img, .funcionarios>img:hover {
     height: 290px;
     max-width: 250px;
@@ -23,7 +23,8 @@
 
 }
 .funcionarios img:hover {
-    filter: brightness(2) saturate(3) hue-rotate(343deg) ;
+    mix-blend-mode: hard-light;
+    filter: brightness(1.1) contrast(0.9);
 }
 
 #fulano {margin: auto; display: block;}

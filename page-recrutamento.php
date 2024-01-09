@@ -6,11 +6,12 @@ get_header();
 <div id="primary" class="container">
     <main id="main" class="col row flex-column">
         <p class="tag">Recrutamento</p>
-        <h2>Venha fazer parte do nosso time</h2>
+
+        <h2>Venha fazer parte da nossa equipa</h2>
         <p class="titulo">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, Ipsum passages, and more recently with desktop
-            publishing software like vPageMaker including versions of Lorem Ipsum.
+            Quer fazer parte da PAOS?<br>
+            Envie-nos a sua candidatura e junte-se a nós.
+
         </p>
         <?php include("recruitPosts.php"); ?>
         <?php include("recruitForm.php"); ?>
