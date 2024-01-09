@@ -1,14 +1,13 @@
 <?php /* Template Name: Áreas atuação */get_header(); ?>
+
 <div class="container" id="page-atuacao">
   <div class="row">
     <div class="col">
-      <span>Áreas de atuação</span>
-      <h2>Conheça nossas especialidades</h2>
+      <p class="tag">Áreas de atuação</p>
+      <h2>Conheça as nossas especialidades</h2>
       <p class="titulo">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, Ipsum passages, and more recently with desktop
-        publishing software like vPageMaker including versions of Lorem Ipsum.
+        A nossa polivalência e vasta experiência nas muitas categorias e ramos tecnológicos conferem-nos a
+        capacidade de apresentar soluções 360º aos nossos clientes.
       </p>
     </div>
   </div>
@@ -19,7 +18,7 @@
   <div class="grid-area-atuacao">
     <div class="  ">
       <div class="img-area-atuacao">
-        <img src="<?= get_stylesheet_directory_uri() ?>/images/foto03.svg">
+        <img src="<?= get_stylesheet_directory_uri() ?>/images/atuacao_produtos.png">
       </div>
       <div class="box-cinza">
         <i class="fa-solid fa-laptop-code" style="color: #D2D3D4; font-size: 40px;"></i>
@@ -38,7 +37,7 @@
 
     <div class="  ">
       <div class="img-area-atuacao">
-        <img src="<?= get_stylesheet_directory_uri() ?>/images/foto03.svg">
+        <img src="<?= get_stylesheet_directory_uri() ?>/images/atuacao_nearshore.png">
       </div>
       <div class="box-cinza">
         <i class="ffa-sharp fa-regular fa-earth-americas" style="color: #D2D3D4; font-size: 40px;"></i>
@@ -57,7 +56,7 @@
 
     <div class="  ">
       <div class="img-area-atuacao">
-        <img src="<?= get_stylesheet_directory_uri() ?>/images/foto03.svg">
+        <img src="<?= get_stylesheet_directory_uri() ?>/images/atuacao_servicos.png">
       </div>
       <div class="box-cinza">
         <i class="fa-regular fa-screwdriver-wrench" style="color: #D2D3D4; font-size: 40px;"></i>
@@ -71,7 +70,7 @@
 
     <div class="  ">
       <div class="img-area-atuacao">
-        <img src="<?= get_stylesheet_directory_uri() ?>/images/foto03.svg">
+        <img src="<?= get_stylesheet_directory_uri() ?>/images/atuacao_outsourcing.png">
       </div>
       <div class="box-cinza">
         <i class="fa-sharp fa-regular fa-clock" style="color: #D2D3D4; font-size: 40px;"></i>
@@ -82,6 +81,22 @@
           o seu tempo ao core do seu negócio.</p>
       </div>
     </div>
+
+    <div class="  ">
+      <div class="img-area-atuacao">
+        <img src="<?= get_stylesheet_directory_uri() ?>/images/atuacao_projetos.png">
+      </div>
+      <div class="box-cinza">
+        <i class="fa-sharp fa-regular fa-rectangle-history" style="color: #D2D3D4; font-size: 40px;"></i>
+        <h4>Projetos</h4>
+        <p>Planeamos, organizamos, desenvolvemos, implementamos e gerimos de forma
+          integral projetos
+          tecnológicos à medida das necessidades específicas de cada cliente, tendo em vista a melhoria dos
+          seus resultados. Aplicamos todo o nosso conhecimento e experiência para que os objetivos definidos
+          sejam atingidos dentro do prazo estipulado.</p>
+      </div>
+    </div>
+
   </div>
 </div>
 <!-- FIM AREAS DE ATUACAO -->

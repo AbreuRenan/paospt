@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <span>Áreas tecnológicas</span>
+      <p class="tag">Áreas tecnológicas</p>
       <h2>Nós temos a melhor solução</h2>
       <p class="titulo">
         Na PAOS privilegiamos a melhor solução, não a tecnologia que mais
