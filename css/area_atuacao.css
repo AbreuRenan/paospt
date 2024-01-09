@@ -4,7 +4,6 @@
 }
 #page-atuacao .grid-area-atuacao {
     grid-template-columns: repeat(2,1fr);
-    /* margin: 80px 0; */
 }
 #page-atuacao .grid-area-atuacao>div{
     display: flex;
@@ -20,7 +19,6 @@
 #page-atuacao .box-cinza{
     height: fit-content;
 }
-
 .grid-area-atuacao .grid-area-atuacao-item {
     min-height: fit-content;
 }
@@ -30,6 +28,7 @@
     margin: 0 auto;
 }
 @media screen and (max-width: 766px) {
+
     #page-atuacao .grid-area-atuacao {
         display: flex;
         flex-direction: column;
@@ -49,4 +48,5 @@
         width: initial;
         margin: initial;
     }
+
 }

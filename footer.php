@@ -26,7 +26,6 @@
                         </p>
                     </a>
                 </center>
-
                 <nav class="footer legal-docs">
                     <ul>
                         <li id="assoft">Membros associados <a href="https://www.assoft.org/pt/" target="_blank">

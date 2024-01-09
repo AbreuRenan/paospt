@@ -5,6 +5,7 @@ nav.footer ul li a {padding-left: 10px;}
 nav.footer ul li#assoft {color: #D2D3D4; font-size: 1.45rem;}
 li#assoft img {
     width: initial;
+
 }
 .footer-logo {
     max-width: 120px;
@@ -24,6 +25,7 @@ nav.legal-docs {
 .footer.legal-docs li#assoft .LRE {
     width: 120px;
     margin-left: 15px;
+
 }
 @media screen and (max-width: 768px) {
     .footer-list {

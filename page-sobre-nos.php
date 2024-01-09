@@ -47,8 +47,10 @@
 <div class="container">
   <div class="row sobre-nos">
     <div class="col-md-12">
+
       <p class="tag">Equipa</p>
       <h2>Quem é a nossa equipa</h2>
+
 
       <!-- Perfil na página  -->
       <div class="container mt-5">
@@ -57,6 +59,7 @@
           $cards = mycmb2_get_field('profile_cards');
           if ($cards) {
             $i = 0;
+
             while ($i < count($cards)) {
               ?>
               <div>
@@ -74,6 +77,7 @@
 
                 </div>
                 <a target="_blank" href="<?php if (isset($cards[$i]['card_linkedin'])) {
+=======
                   echo $cards[$i]['card_linkedin'];
                 } else {
                   echo 'https://www.linkedin.com';
