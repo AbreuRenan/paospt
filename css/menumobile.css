@@ -29,14 +29,14 @@
         align-items: center;
         justify-content: center;
     }
-    .main-menu {
-        display: none;
+    .main-menu:not(.mobile_active) {
+        display: none!important;
     }
-    .mobile_active+#menuMobileBtn{
+    .mobile_active ~ #menuMobileBtn{
         z-index: 101;
         position: relative;
     }
-    .mobile_active+#menuMobileBtn::after {
+    .mobile_active ~ #menuMobileBtn::after {
         content: 'X';
         font-size: 20px;
         text-align: center;

@@ -2,9 +2,9 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <span>Áreas tecnológicas</span>
-      <h2>Nós temos a melhor solução</h2>
-      <p class="titulo">
+      <p class="tag" data-lang="areaTech-areaTech-p1">Áreas tecnológicas</p>
+      <h2 data-lang="areaTech-areaTech-h2">Nós temos a melhor solução</h2>
+      <p class="titulo" data-lang="areaTech-areaTech-p2">
         Na PAOS privilegiamos a melhor solução, não a tecnologia que mais
         gostamos. As linguagens são escolhidas para cada projeto de acordo com a
         arquitetura desenhada, observando sempre os pontos fortes e os pontos

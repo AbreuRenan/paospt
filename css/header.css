@@ -1,0 +1,28 @@
+.langContainer {
+    position: fixed;
+    top: 40px;
+    right: 25px;
+    border: 1px solid red;
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    z-index: 1000;
+
+}
+.langContainer * {
+    color: black;
+    font-size: 16px;
+    border-radius: none;
+}
+.langContainer select {
+    padding: 4px 8px;
+
+}
+
+.lang-en, .lang-pt {
+    display: none;
+}
+
+.lang-en.active-lang, .lang-pt.active-lang {
+    display: flex;
+}

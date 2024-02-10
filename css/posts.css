@@ -1,7 +1,34 @@
 .post .post-date {
     font-size: 12px;
 }
-.post .post-content+.button {
-    max-width: 30%;
-    text-align: center;
+
+.post {
+    margin-bottom: 15px;
 }
+.single-post{
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding-left: 40px;
+    background-color: rgba(0,0,0,0.1);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+}
+.single-post .tag {
+    font-size: 1.2rem;
+    margin-top: 0;
+
+}
+.single-post .post-title {
+    
+}
+.single-post .post-short {
+    background-color: #222A36;
+    border-radius: 4px;
+    padding: 10px ;
+}
+.post-long li {
+    font-size: 1.5rem;
+    
+}
+

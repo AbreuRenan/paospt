@@ -12,36 +12,32 @@ get_header(); ?>
         </p>
         <h2>Nosso blog</h2>
         <p class="titulo">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, Ipsum passages, and more recently with desktop
-            publishing software like vPageMaker including versions of Lorem Ipsum.
+            <?= get_the_content(); ?>
         </p>
 
         <?php
-        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $args = array(
             'post_type' => 'post',
-            'posts_per_page' => 10,
-            'category_name' => 'blog',
-            'paged' => $paged
+            'category_name' => 'Blog'
         );
         $query = new WP_Query($args);
-
         if ($query->have_posts()):
             while ($query->have_posts()):
                 $query->the_post(); ?>
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>">
                     <div class="py-4 d-flex flex-column">
-                        <h4 class="entry-title">
-                            <?php the_title(); ?>
-                        </h4>
+                        <a href="<?php the_permalink(); ?>">
+                            <h4 class="entry-title">
+                                <?php the_title(); ?>
+                            </h4>
+                        </a>
                         <p class="post-date align-items-center d-flex"><i class="fa fa-calendar mr-2" aria-hidden="true"></i>
                             <?php the_date() ?>
                         </p>
                         <p class="post-content">
-                            <?php the_field('short_text'); ?>
+                            <?php the_excerpt(); ?>
                         </p>
-                        <a class="button" href="<?php the_permalink(); ?>">Ver Oferta</a>
+                        <a class="button" href="<?php the_permalink(); ?>">Leia mais</a>
                     </div>
                 </article>
 

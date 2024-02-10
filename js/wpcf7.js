@@ -3,5 +3,6 @@ window.addEventListener('DOMContentLoaded', function() {
     if(brs) {
         brs.forEach(br => br.remove());
     }
+    
 });
 

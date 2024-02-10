@@ -6,24 +6,20 @@
   <link rel="shortcut icon" href="">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <link rel="icon" href="<?= get_stylesheet_directory_uri() ?>/images/icone.png" type="image/png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://kit.fontawesome.com/fc2a1ca477.css" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Roboto:wght@300&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Roboto:wght@700&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Roboto:wght@500;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <script type="module" src="<?= get_template_directory_uri() . '/js/lang.js'?>"></script>
 
-  <script src="https://kit.fontawesome.com/fc2a1ca477.js" crossorigin="anonymous"></script>
+
   <?php wp_head(); ?>
 </head>
 
-<body class="body">
+<body class="body" >
   <!-- MENU -->
 
   <div class="container-fluid">
@@ -35,21 +31,36 @@
 
       <div class="container">
         <div class="row">
+          <div class="langContainer">
+            <select name="language-Selector" id="langSelector">
+              <option value="pt">Portugues</option>
+              <option value="en">English</option>
+            </select>
+          </div>
           <div class="col-lg-12">
             <nav class="">
-              <a href="/home">
+              <a href="/home" aria-label="Home Logo">
                 <div class="logo"></div>
               </a>
               <?php
               $menu = [
                 'menu' => 'menuhome',
                 'container' => 'nav',
-                'container_class' => 'main-menu',
-                'menu_class' => 'nav-menu',
+                'container_class' => 'main-menu lang-pt',
+                'menu_class' => 'nav-menu ',
               ];
               wp_nav_menu($menu);
               ?>
-              <button id="menuMobileBtn"></button>
+              <?php
+              $menu = [
+                'menu' => 'menuhome-en',
+                'container' => 'nav',
+                'container_class' => 'main-menu lang-en',
+                'menu_class' => 'nav-menu ',
+              ];
+              wp_nav_menu($menu);
+              ?>
+              <button id="menuMobileBtn" title="Mobile Menu"></button>
             </nav>
           </div>
         </div>
